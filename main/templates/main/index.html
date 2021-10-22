@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}ГЛАВНАЯ СТРАНИЦА{% endblock %}
+
+
+
+{% block content %}
+  <div class="features">
+      <h1>{{ title }}</h1>
+      <p>Просто текст</p>
+      <button class="btn btn-warning"> Кнопка </button>
+
+      {% for el in values %}
+
+        <p>{{ el }}</p>
+      {% endfor %}
+  </div>
+    {% include 'main/test.html' %}
+{% endblock %}
+
+
